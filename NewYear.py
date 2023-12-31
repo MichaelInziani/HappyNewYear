@@ -7,5 +7,5 @@ def heart_shape(msg=" Happy New Year 2024"):
             f = ((x * 0.05) ** 2 + (y * 0.1) ** 2 - 1) ** 3 - (x * 0.05) ** 2 * (y * 0.1) ** 3
             line += msg[(x - y) % len(msg)] if f <= 0 else " "
         lines.append(line)
-    print(Fore.BLUE+"\n".join(lines))
+    print(Fore.CYAN+"\n".join(lines))
 heart_shape()  # Call the function to create the heart
